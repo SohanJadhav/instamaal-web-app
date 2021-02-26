@@ -16,14 +16,12 @@ class Products extends Component {
     componentDidMount() {
         axios.get(`http://13.232.114.224:8080/fetchProductList`)
             .then(res => {
-                debugger;
                 const productList = res.data.data;
                 this.setState({ productList });
             })
 
     }
     nextPath(path) {
-        debugger;
         this.props.history.push(path);
     }
 

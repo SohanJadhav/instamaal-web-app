@@ -31,7 +31,6 @@ class Login extends Component {
             const loginInfo = {
                 userName, password
             }
-            debugger;
             axios.post(`http://13.232.114.224:8080/loginAdmin`, loginInfo)
                 .then(res => {
                     if (res && res.data.data && res.data.data.length) {
@@ -58,7 +57,6 @@ class Login extends Component {
 
     handleSubmit = (event) => {
         const form = event.currentTarget;
-        debugger;
         // if (form.checkValidity() === false) {
         event.preventDefault();
         event.stopPropagation();

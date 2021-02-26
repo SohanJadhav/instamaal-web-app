@@ -149,7 +149,6 @@ class AddProduct extends Component {
     }
 
     handleSubCategoryChange = (event) => {
-        debugger;
         this.setState({
             selectedSubCategoryId: event.target.value
         })
@@ -171,10 +170,8 @@ class AddProduct extends Component {
     }
 
     handleCategoryAdd = () => {
-        debugger;
         const { categoryName, subCategoryName, selectedSubCategoryId, categoryList, subCategoryList } = this.state;
         if (this.validateAddCategory()) {
-            debugger;
             const categoryObj = {
                 categoryName,
                 categoryId: '99999',
@@ -185,7 +182,6 @@ class AddProduct extends Component {
                 subCategoryName,
                 subCategoryId: '99999'
             }
-            debugger;
             const tempCategoryList = categoryList;
             tempCategoryList.push(categoryObj);
             const tempSubCategoryList = subCategoryList;
@@ -198,9 +194,7 @@ class AddProduct extends Component {
             }, () => {
                 console.log(categoryList)
                 console.log(subCategoryList)
-                debugger
             })
-            debugger;
             this.setState({
                 isShowAddCategory: false
             });
@@ -254,7 +248,6 @@ class AddProduct extends Component {
     handleAddProduct = () => {
 
         const { productName, categoryName, selectedCategoryId, selectedBrandId, selectedSubCategoryId, subCategoryName, brandName, productCode, productDiscount, productPrice, productQty, productSize, productUnit } = this.state;
-        debugger;
         // const productInfo =
     }
 
