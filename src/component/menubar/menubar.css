@@ -1,0 +1,30 @@
+.menuContainer {
+  background-color: #1f2641 !important;
+  color: #fff;
+  width: 100%;
+}
+
+.menuLogo {
+  font-size: 32px;
+  padding: 5px 20px;
+}
+
+.menuItemContainer {
+  padding: 15px;
+}
+
+.menuItem {
+  padding: 20px;
+  font-size: 16px;
+  color: #fff !important;
+}
+
+.pro-sidebar > .pro-sidebar-inner {
+  background-color: #1f2641 !important;
+  color: #fff;
+  width: 100%;
+}
+
+.username{
+  padding: 10px 20px;
+}
