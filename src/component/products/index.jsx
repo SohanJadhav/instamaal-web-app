@@ -33,7 +33,7 @@ class Products extends Component {
             <>
                 <div className="row page-header">
                     <div className="col-12">
-                        <h5>Products</h5>
+                        <h2>Products</h2>
                     </div>
                 </div>
                 <div className="row mx-auto page-content">
